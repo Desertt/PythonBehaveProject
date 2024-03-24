@@ -17,7 +17,4 @@ def step_impl(context):
 def step_impl(context):
     print("correct profile opened")
 
-@step("will be delete")
-def step_impl(context):
-    print("correct profile opened")
 

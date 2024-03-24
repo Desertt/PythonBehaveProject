@@ -11,9 +11,3 @@ Feature: Facebook login functionality
       When we input correct credentials
       Then login will be successful
       And correct profile opened
-
-  Scenario: Test Login with will be delete login credentials
-     Given credentials are given
-      When we input correct credentials
-      Then login will be successful
-      And correct profile opened
