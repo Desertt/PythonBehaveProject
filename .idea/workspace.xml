@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0315dcf6-6589-49f0-b191-4a0e7cf81f26" name="Changes" comment="Demo_test_cases  / Selenium Implementation.Dev">
-      <change afterPath="$PROJECT_DIR$/features/practicetestautomation_login.feature" afterDir="false" />
+    <list default="true" id="0315dcf6-6589-49f0-b191-4a0e7cf81f26" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <change afterPath="$PROJECT_DIR$/features/Helper/SeleniumHelper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Selenium_Behave_Framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Selenium_Behave_Framework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/demo_test_cases.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/steps/demo_test_cases_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/login_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/login_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/login_steps.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -41,12 +44,13 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -127,6 +131,11 @@
       <workItem from="1712006969574" duration="4510000" />
       <workItem from="1712095680847" duration="1324000" />
       <workItem from="1712262601947" duration="3350000" />
+      <workItem from="1712525398257" duration="1873000" />
+      <workItem from="1712528555496" duration="652000" />
+      <workItem from="1712529229166" duration="626000" />
+      <workItem from="1712530022550" duration="364000" />
+      <workItem from="1712530396353" duration="113000" />
     </task>
     <task id="LOCAL-00001" summary="Demo_test_cases  / Features and steps file">
       <option name="closed" value="true" />
@@ -232,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712097229418</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <option name="closed" value="true" />
+      <created>1712272018722</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712272018722</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +273,8 @@
     <MESSAGE value="Demo_test_cases  / Tags and Environment file." />
     <MESSAGE value="Demo_test_cases  / Selenium Implementation.." />
     <MESSAGE value="Demo_test_cases  / Selenium Implementation.Dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Demo_test_cases  / Selenium Implementation.Dev" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Selenium_Behave_Framework$rwfr.coverage" NAME="rwfr Coverage Results" MODIFIED="1712096288761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

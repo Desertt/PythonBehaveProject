@@ -2,9 +2,13 @@ from behave import *
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from Helper.SeleniumHelper import SeleniumHelper
+
+login_url = "https://practicetestautomation.com/practice-test-login/"
 @when('user input wrong credentials')
 def step_impl(context):
-    context.driver.get("https://practicetestautomation.com/practice-test-login/")
+    #context.driver.get("https://practicetestautomation.com/practice-test-login/")
+    SeleniumHelper().open_page(context.driver,login_url)
     context.driver.find_element(By.XPATH, '//*[@id="username"]').send_keys("studentt")
     context.driver.find_element(By.XPATH, '//*[@id="password"]').send_keys("Password123")
     context.driver.find_element(By.XPATH, '//*[@id="submit"]').click()
