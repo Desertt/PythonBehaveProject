@@ -1,26 +1,26 @@
-from behave import *
+from behave import then, when
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from Helper.SeleniumHelper import SeleniumHelper
+from selenium.webdriver.support.ui import WebDriverWait
 
-login_url = "https://practicetestautomation.com/practice-test-login/"
-@when('user input wrong credentials')
-def step_impl(context):
-    #context.driver.get("https://practicetestautomation.com/practice-test-login/")
-    SeleniumHelper().open_page(context.driver,login_url)
-    context.driver.find_element(By.XPATH, '//*[@id="username"]').send_keys("studentt")
-    context.driver.find_element(By.XPATH, '//*[@id="password"]').send_keys("Password123")
-    context.driver.find_element(By.XPATH, '//*[@id="submit"]').click()
 
-@then('Error message will come')
-def step_impl(context):
-    try:
-        element = WebDriverWait(context.driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, '//*[@id="error"]'))
-        )
-        print("test failed")
-    except:
-        print("test passed")
-        context.driver.quit()
+LOGIN_URL = "https://practicetestautomation.com/practice-test-login/"
 
+
+@when("the user enters invalid login credentials")
+def enter_invalid_login_credentials(context):
+    context.driver.get(LOGIN_URL)
+
+    context.driver.find_element(By.ID, "username").send_keys("invalid_user")
+    context.driver.find_element(By.ID, "password").send_keys("invalid_password")
+    context.driver.find_element(By.ID, "submit").click()
+
+
+@then("an authentication error message should be displayed")
+def verify_authentication_error(context):
+    error_message = WebDriverWait(context.driver, 10).until(
+        EC.visibility_of_element_located((By.ID, "error"))
+    )
+
+    assert error_message.is_displayed(), "Authentication error message was not displayed."
+    assert error_message.text.strip(), "Authentication error message was empty."
